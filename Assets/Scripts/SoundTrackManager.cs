@@ -54,17 +54,7 @@ public class SoundTrackManager : MonoBehaviour
 
 
 
-        /*
-        powerchords.PlayScheduled(startTime);
-        bass.PlayScheduled(startTime);
-        doublebass.PlayScheduled(startTime);
-        guitar.PlayScheduled(startTime);
-        violin.PlayScheduled(startTime);
-        guitar2.PlayScheduled(startTime);
-        violin2.PlayScheduled(startTime);
-        drum.PlayScheduled(startTime);
-        tambourine.PlayScheduled(startTime);
-        */
+       
 
         powerchords.volume = 1f;
 

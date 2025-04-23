@@ -10,7 +10,10 @@ public class FightManager : MonoBehaviour
     public SoundTrackManager soundTrackManager;
     public bool cardChosing = false;
     public UIManager uimanager;
-    
+    public SwordImpact PlayerWeapon;
+    public GeneralPlayerMovement PlayerMovement;
+
+
     public static FightManager Instance { get; private set; }
 
     private void Awake()
@@ -35,7 +38,7 @@ public class FightManager : MonoBehaviour
 
         StartCoroutine(FadeStopMusic());
 
-       
+
     }
 
     public void GameWon()
@@ -48,19 +51,41 @@ public class FightManager : MonoBehaviour
 
     public void restartGame()
     {
-       
+
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-       
-}
+
+    }
 
     IEnumerator FadeStopMusic()
     {
-      
-        
+
+
         Debug.Log("CALLLING THAT");
         soundTrackManager.setAllVolumeToZero();
         yield return new WaitForSeconds(1f);
     }
+
+    public void UpdateGameStat(string stat, float value)
+    {
+       switch (stat)
+            {
+                case "damage":
+                    PlayerWeapon.SetDamage(PlayerWeapon.getDamage() + (int)value);
+                    break;
+                case "Movementspeed":
+                    PlayerMovement.speed += value;
+                    break;
+
+                default:
+                    break;
+
+            }
+
+       
+    } 
+
+
+    
 
  
 

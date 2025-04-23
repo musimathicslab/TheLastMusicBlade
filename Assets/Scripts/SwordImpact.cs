@@ -5,8 +5,12 @@ using UnityEngine;
 
 public class SwordImpact : MonoBehaviour
 {
-
-    
+    /*
+     * 
+     * 
+     * 
+     */
+    private int damage = 20;
     private Collider swordCollider;
     public string TAG_tocheck;
 
@@ -20,11 +24,22 @@ public class SwordImpact : MonoBehaviour
         {
             //Debug.Log(gameObject.tag +" ha colpito il nemico!");
             Debug.Log(other.gameObject.tag);
-            other.GetComponent<HealthManager>().TakeDamage(20);
+            other.GetComponent<HealthManager>().TakeDamage(damage);
 
 
         }
         
+    }
+
+
+    public void SetDamage(int dmg)
+    {
+        damage = dmg;
+    }
+
+    public int getDamage()
+    {
+        return damage;
     }
 }
 
