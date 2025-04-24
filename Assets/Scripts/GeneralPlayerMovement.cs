@@ -50,7 +50,7 @@ public class GeneralPlayerMovement : MonoBehaviour
 
     public TextMeshProUGUI CDText;
     public GameObject rollImage;
-
+    public int dashCooldown = 3;
 
 
 
@@ -214,7 +214,7 @@ public class GeneralPlayerMovement : MonoBehaviour
     private void DashRecharge()
     {
         DashinCD = true;
-        StartCoroutine(StartCountdown(3));
+        StartCoroutine(StartCountdown(dashCooldown));
     }
 
 

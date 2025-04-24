@@ -69,14 +69,17 @@ public class FightManager : MonoBehaviour
     {
        switch (stat)
             {
-                case "damage":
+             case "damage":
                     PlayerWeapon.SetDamage(PlayerWeapon.getDamage() + (int)value);
                     break;
-                case "Movementspeed":
-                    PlayerMovement.speed += value;
+            case "movementspeed":
+                    PlayerMovement.speed += (int) value;
+                    break;
+            case "dashcd":
+                    PlayerMovement.dashCooldown += (int)value;
                     break;
 
-                default:
+            default:
                     break;
 
             }

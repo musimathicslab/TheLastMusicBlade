@@ -35,6 +35,7 @@ public class HealthManager : MonoBehaviour
                 checkpoint1reached = true;
                 FightManager.Instance.cardChosing = true;
                 FightManager.Instance.soundTrackManager.CheckPoint1();
+                
 
 
             }

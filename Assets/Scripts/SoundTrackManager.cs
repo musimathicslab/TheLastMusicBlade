@@ -207,23 +207,31 @@ public class SoundTrackManager : MonoBehaviour
         switch (instrument)
         {
             case ("ElectricBass"):
+                FightManager.Instance.UpdateGameStat("dashcd", -2f);
                 bass.volume = 1f;
                 break;
             case ("Violin"):
+                FightManager.Instance.UpdateGameStat("movementspeed", -5f);
                 violin.volume = 1f;
                 violin2.volume = 1f;
                 break;
             case ("Drum"):
+                FightManager.Instance.UpdateGameStat("damage", 10f);
                 drum.volume = 1f;
                 break;
             case ("DoubleBass"):
+                FightManager.Instance.UpdateGameStat("dashcd", +2f);
                 doublebass.volume = 1f;
                 break;
             case ("Guitar"):
+                FightManager.Instance.UpdateGameStat("movementspeed", +10f);
                 guitar.volume = 1f;
                 guitar2.volume = 1f;
                 break;
             case ("Tambourine"):
+                FightManager.Instance.UpdateGameStat("damage", -5f);
+                drum.volume = 1f;
+                break;
                 tambourine.volume = 1f;
                 break;
 

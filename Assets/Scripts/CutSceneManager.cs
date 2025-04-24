@@ -13,7 +13,7 @@ public class CutSceneManager : MonoBehaviour
     public RawImage blackscreen;
     public AudioSource MetalSoundTrack;
     public VideoPlayer video;
-    public NewPlayerMovement playerMovement;
+    public GeneralPlayerMovement playerMovement;
 
 
     private int fadeDuration = 1;
