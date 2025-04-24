@@ -1101,7 +1101,7 @@ MonoBehaviour:
   cardChosing: 0
   uimanager: {fileID: 667287870}
   PlayerWeapon: {fileID: 2018907448}
-  PlayerMovement: {fileID: 0}
+  PlayerMovement: {fileID: 560484818}
 --- !u!4 &252156917
 Transform:
   m_ObjectHideFlags: 0
@@ -1652,6 +1652,7 @@ MonoBehaviour:
   dashspeed: 45
   CDText: {fileID: 18875405}
   rollImage: {fileID: 1592578928}
+  dashCooldown: 3
 --- !u!1 &579179664
 GameObject:
   m_ObjectHideFlags: 0
@@ -3945,7 +3946,7 @@ MonoBehaviour:
   blackscreen: {fileID: 367955317}
   MetalSoundTrack: {fileID: 109365590}
   video: {fileID: 83428679}
-  playerMovement: {fileID: 0}
+  playerMovement: {fileID: 560484818}
 --- !u!4 &941889748
 Transform:
   m_ObjectHideFlags: 0
