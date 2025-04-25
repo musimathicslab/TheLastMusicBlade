@@ -23,6 +23,7 @@ Music is not just a background element: it is the **beating heart of the game**.
 
 
 ![Gameplay](READMEimg/gameplay.gif)
+
 > 🎵 **Why music? ** 
 Early exposure to music promotes **cognitive development**, improves **memory** and enhances **language and mathematical skills** and when combined with interactive technology could become become a powerful tool in therapeutic and educational settings.
 
