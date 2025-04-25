@@ -26,3 +26,4 @@ Unity filter=lfs diff=lfs merge=lfs -text
 esportati filter=lfs diff=lfs merge=lfs -text
 *.anim filter=lfs diff=lfs merge=lfs -text
 Animazioni filter=lfs diff=lfs merge=lfs -text
+*.gif filter=lfs diff=lfs merge=lfs -text
