@@ -50,9 +50,9 @@ public class CutSceneManager : MonoBehaviour
 
     private void onVideoEnd(VideoPlayer vp) {
 
-
-        Cursor.visible = false;                // Rende visibile il cursore
+        Cursor.visible = false;               
         Cursor.lockState = CursorLockMode.Locked;
+
         //StartCoroutine(FadeInRoutine(blackscreen));
         StartCoroutine(FadeOutRoutine(blackscreen));
         videoCanvas.gameObject.SetActive(false);

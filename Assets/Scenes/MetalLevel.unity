@@ -560,7 +560,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   charactername: Enemy
-  maxHealth: 500
+  maxHealth: 800
 --- !u!1 &128322855 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -8068073526183931155, guid: 44484938b1d7bf748acb63f50bc94a7e, type: 3}
@@ -4529,7 +4529,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   charactername: Cadence
-  maxHealth: 200
+  maxHealth: 400
 --- !u!1 &1060050591
 GameObject:
   m_ObjectHideFlags: 0
