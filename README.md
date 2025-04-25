@@ -72,7 +72,7 @@ The idea is to create more than just a game: The Last MusicBlade is meant to be 
    If Unity does not automatically detect the correct version, click on the Unity version label next to the project and select `6000.0.30f1` from the list of installed editors.
 
 4. After opening the project in Unity, Go to `Window` > `Package Manager` and ensure that the following packages are installed(need to be listed under the **In Project** tab).
-   1. 🤖 **AI Navigation 2.0.5**[👉🔍]([https://docs.unity.com/navmesh/index.html](https://docs.unity3d.com/Packages/com.unity.ai.navigation@2.0/manual/index.html)
+   1. 🤖 **AI Navigation 2.0.5** [👉🔍](https://docs.unity3d.com/Packages/com.unity.ai.navigation@2.0/manual/index.html)
    2. 📹 **Cinemachine 2.10.3** [👉🔍](https://docs.unity3d.com/Packages/com.unity.cinemachine@2.10/manual/index.html)  
 
    3. ✨ **Post Processing 3.4.0**[👉🔍](https://docs.unity3d.com/Manual/PostProcessingOverview.html)
