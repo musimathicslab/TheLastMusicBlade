@@ -88,6 +88,7 @@ public class GeneralPlayerMovement : MonoBehaviour
         
         if (FightManager.Instance.cutSceneEnded && !FightManager.Instance.cardChosing)
         {
+            UIManager.Instance.StartFight();
             //MOVEMENT SECTION
             float moveX = moveInput.x;
             float moveZ = moveInput.y;

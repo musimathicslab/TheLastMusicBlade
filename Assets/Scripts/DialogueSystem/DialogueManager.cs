@@ -10,6 +10,7 @@ public class DialogueManager : MonoBehaviour
     [SerializeField]
     private DialogueSequence Dialogue;
 
+    public GameObject DialogueCanvas;
     public GameObject image;
     public TextMeshProUGUI name;
     public TextMeshProUGUI dialogueText;
@@ -18,7 +19,7 @@ public class DialogueManager : MonoBehaviour
     private int lineIndex;
     private float textspeed;
     private Coroutine textAnimationCoroutine;
-
+    public GeneralPlayerMovement playerMovement;
 
 
 
@@ -67,6 +68,8 @@ public class DialogueManager : MonoBehaviour
 
     public void StartDialogue()
     {
+        Cursor.visible = true;                // Rende visibile il cursore
+        Cursor.lockState = CursorLockMode.None;
         lineIndex = 0;
         DisplayLine();
         dialogueBox.SetActive(true);
@@ -101,7 +104,7 @@ public class DialogueManager : MonoBehaviour
         Debug.Log(sentence);
         foreach (char letter in sentence)
         {
-            Debug.Log(letter);
+            
             dialogueText.text += letter;
             yield return new WaitForSeconds(textspeed);
         }
@@ -122,10 +125,13 @@ public class DialogueManager : MonoBehaviour
         DisplayLine();
     }
 
-    private void EndDialogue()
+    public void EndDialogue()
     {
+        
+        lineIndex = Dialogue.lines.Length + 1;
         Debug.Log("Dialogo terminato.");
-       
+        FightManager.Instance.cutSceneEnded = true;
+        DialogueCanvas.SetActive(false);
     }
 
 
